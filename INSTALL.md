@@ -7,7 +7,7 @@
 	sudo make install
 	cd ..
 
-	git clone --recursive git://github.com/twitchplayspokemon/tppcrystal251.git
+	git clone --recursive git://github.com/emicrania97/vetro.git
 	cd pokecrystal
 
 Per compilare **pokecrystal.gbc**:
@@ -30,7 +30,7 @@ Nella shell esegui:
 	sudo make install
 	cd ..
 
-	git clone --recursive git://github.com/twitchplayspokemon/tppcrystal251.git
+	git clone --recursive git://github.com/emicrania97/vetro.git
 	cd pokecrystal
 
 Per compilare **pokecrystal.gbc**:
@@ -55,9 +55,9 @@ Se invece non vuoi installare pip, allora esegui
 A questo punto installa l'ultima versione di [**rgbds**](https://github.com/bentley/rgbds/releases/).
 Metti `rgbasm.exe`, `rgblink.exe` e `rgbfix.exe` in `C:\cygwin\usr\local\bin`.
 
-Nel **Cygwin terminal**:
+Nel **terminale di Cygwin**:
 
-	git clone --recursive git://github.com/twitchplayspokemon/tppcrystal251.git
+	git clone --recursive git://github.com/emicrania97/vetro.git
 	cd pokecrystal
 
 Per compilare:
@@ -80,7 +80,7 @@ VirtualBox. Segui i procedimenti sottostanti:
 	cd vagrantbox
 	vagrant init pokecrystal
 	vagrant up
-	vagrant ssh -c "cd /vagrant && git clone --recursive git://github.com/twitchplayspokemon/tppcrystal251.git"
+	vagrant ssh -c "cd /vagrant && git clone --recursive git://github.com/emicrania97/vetro.git"
 	vagrant ssh
 ```
 
