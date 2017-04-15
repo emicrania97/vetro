@@ -10,20 +10,20 @@
 	git clone --recursive git://github.com/twitchplayspokemon/tppcrystal251.git
 	cd pokecrystal
 
-To build **pokecrystal.gbc**:
+Per compilare **pokecrystal.gbc**:
 
 	make
 
 
 # OS X
 
-On 10.8 or earlier, download and install **Command Line Tools for Xcode**.
+Su 10.8 o inferiore, scarica e installa **Command Line Tools for Xcode**.
 
-On 10.9 or later:
+Su 10.9 o successivo:
 
 	xcode-select --install
 
-In the shell, run:
+Nella shell esegui:
 
 	git clone git://github.com/bentley/rgbds.git
 	cd rgbds
@@ -33,46 +33,46 @@ In the shell, run:
 	git clone --recursive git://github.com/twitchplayspokemon/tppcrystal251.git
 	cd pokecrystal
 
-To build **pokecrystal.gbc**:
+Per compilare **pokecrystal.gbc**:
 
 	make
 
 
 # Windows
 
-To build on Windows, use [**Cygwin**](http://cygwin.com/install.html) (32-bit).
+Per compilare su Windows, usa [**Cygwin**](http://cygwin.com/install.html) (32-bit).
 
-In the installer, select the following packages: `make` `git` `python` `python-setuptools` `gcc` `libsasl2` `ca-certificates`
+Nell'installer, seleziona i seguenti pacchetti: `make` `git` `python` `python-setuptools` `gcc` `libsasl2` `ca-certificates`
 
-You can use python-setuptools directly via easy_install, but we recommend you use pip.  To install pip, run `easy_install pip`.  When that finishes, run
+Puoi usare python-setuptools direttamente da easy_install, ma consigliamo di usare pip.  Per installare pip, esegui `easy_install pip`.  Quando finisce, esegui
 
 	pip install pypng
 
-If you opt not to install pip, run instead
+Se invece non vuoi installare pip, allora esegui
 
 	easy_install pypng
 
-Then get the most recent version of [**rgbds**](https://github.com/bentley/rgbds/releases/).
-Put `rgbasm.exe`, `rgblink.exe` and `rgbfix.exe` in `C:\cygwin\usr\local\bin`.
+A questo punto installa l'ultima versione di [**rgbds**](https://github.com/bentley/rgbds/releases/).
+Metti `rgbasm.exe`, `rgblink.exe` e `rgbfix.exe` in `C:\cygwin\usr\local\bin`.
 
-In the **Cygwin terminal**:
+Nel **Cygwin terminal**:
 
 	git clone --recursive git://github.com/twitchplayspokemon/tppcrystal251.git
 	cd pokecrystal
 
-To build:
+Per compilare:
 
 	make
 
 
 # Vagrant
 
-The simplest way to get pokecrystal to compile is to use Vagrant and
-VirtualBox. Follow these steps:
+Il metodo più semplice per compilare pokecrystal è usare Vagrant e
+VirtualBox. Segui i procedimenti sottostanti:
 
-* [Download and install Vagrant](http://www.vagrantup.com/downloads.html)
-* Follow the instructions to [download and install VirtualBox](http://docs-v1.vagrantup.com/v1/docs/getting-started/)
-* Run these commands:
+* [Scarica e installa Vagrant](http://www.vagrantup.com/downloads.html)
+* Segui le istruzioni per [scaricare e installare VirtualBox](http://docs-v1.vagrantup.com/v1/docs/getting-started/)
+* Esegui questi comandi:
 
 ```
 	vagrant box add pokecrystal http://diyhpl.us/~bryan/irc/pokecrystal/pokecrystal.box
@@ -84,11 +84,11 @@ VirtualBox. Follow these steps:
 	vagrant ssh
 ```
 
-Running "vagrant ssh" will give you a shell to type commands into for compiling
-the source code. Then the "virtualbox" directory on the host appears as a shared
-folder inside of the guest virtual machine at "/vagrant".
+Eseguendo "vagrant ssh" ti apparirà una shell in cui dovrai inserire i comandi per compilare
+il codice. Quindi la directory "virtualbox" sull'host apparirà come una cartella condivisa
+dentro la macchina virtuale guest "/vagrant".
 
-To build the project, run these commands in the guest (that is, inside "vagrant
+Per compilare il progetto, esegui questi comandi nel guest (tutto ciò dentro "vagrant
 ssh"):
 
 	cd /vagrant/pokecrystal
